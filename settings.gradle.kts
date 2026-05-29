@@ -7,6 +7,7 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -21,4 +22,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "InventoryManager"
 include(":app")
- 
+include(":core")
+include(":designsystem")
