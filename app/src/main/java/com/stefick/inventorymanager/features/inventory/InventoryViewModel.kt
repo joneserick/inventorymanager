@@ -28,6 +28,7 @@ class InventoryViewModel @Inject constructor(
         when (event) {
             is InventoryEvent.AddItem -> addItem(event.item)
             is InventoryEvent.Refresh -> handleRefresh()
+            is InventoryEvent.BarCodeScanned -> Unit
         }
     }
 
