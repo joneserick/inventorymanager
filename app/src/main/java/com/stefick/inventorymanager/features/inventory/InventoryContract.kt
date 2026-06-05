@@ -16,4 +16,5 @@ sealed class InventoryUiState {
 sealed class InventoryEvent {
     data class AddItem(val item: InventoryItem) : InventoryEvent()
     data class Refresh(val isRefreshing: Boolean) : InventoryEvent()
+    data class BarCodeScanned(val barcode: String) : InventoryEvent()
 }
