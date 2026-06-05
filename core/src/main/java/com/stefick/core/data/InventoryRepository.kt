@@ -18,15 +18,7 @@ class InventoryRepository @Inject constructor(
 ) {
     val inventoryItems: Flow<List<InventoryItem>> = dao.getAllItems().map { entities ->
         entities.map { entity ->
-            InventoryItem(
-                id = entity.id,
-                name = entity.name,
-                sku = entity.sku,
-                quantity = entity.quantity,
-                price = entity.price,
-                description = entity.description,
-                barcode = entity.barcode
-            )
+            InventoryItem(entity.id, entity.name, entity.sku, entity.quantity, entity.price)
         }
     }
 
@@ -41,25 +33,13 @@ class InventoryRepository @Inject constructor(
                     name = entity.name,
                     sku = entity.sku,
                     quantity = entity.quantity,
-                    price = entity.price,
-                    description = entity.description,
-                    barcode = entity.barcode
+                    price = entity.price
                 )
             }
         }
     }
 
     suspend fun addItem(item: InventoryItem) {
-        dao.insertItem(
-            ItemEntity(
-                id = item.id,
-                name = item.name,
-                sku = item.sku,
-                quantity = item.quantity,
-                price = item.price,
-                description = item.description,
-                barcode = item.barcode
-            )
-        )
+        dao.insertItem(ItemEntity(item.id, item.name, item.sku, item.quantity, item.price))
     }
 }

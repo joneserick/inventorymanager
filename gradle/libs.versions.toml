@@ -12,7 +12,7 @@ room = "2.8.4"
 hilt = "2.57.1"
 paging = "3.5.0"
 navigationCompose = "2.9.8"
-mlkitBarcode = "17.3.0"
+mlkitBarcode = "17.2.0"
 camerax = "1.6.1"
 appcompat = "1.7.1"
 material = "1.13.0"
@@ -33,7 +33,6 @@ androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graph
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
-androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
 androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 
 # Room
@@ -59,7 +58,7 @@ androidx-camera-core = { group = "androidx.camera", name = "camera-core", versio
 androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camerax" }
 androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camerax" }
 androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "camerax" }
-mlkit-barcode-scanning = { group = "com.google.mlkit", name = "barcode-scanning", version.ref = "mlkitBarcode" }
+mlkit-barcode-scanning = { group = "google.mlkit", name = "barcode-scanning", version.ref = "mlkitBarcode" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
