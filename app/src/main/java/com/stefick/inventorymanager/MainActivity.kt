@@ -14,6 +14,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.stefick.inventorymanager.features.agent.AiAgentScreen
 import com.stefick.inventorymanager.features.inventory.InventoryScreen
 import com.stefick.inventorymanager.features.scanner.BarcodeScanner
 import com.stefick.inventorymanager.ui.theme.InventoryManagerTheme
@@ -38,6 +39,9 @@ class MainActivity : ComponentActivity() {
                             InventoryScreen(
                                 onScanClick = {
                                     navController.navigate("scanner")
+                                },
+                                onNavigateToAiAgent = {
+                                    navController.navigate("agent")
                                 }
                             )
                         }
@@ -45,6 +49,13 @@ class MainActivity : ComponentActivity() {
                             BarcodeScanner(
                                 onBarcodeDetected = { barcode ->
                                     Toast.makeText(context, "Barcode detected: $barcode", Toast.LENGTH_LONG).show()
+                                    navController.popBackStack()
+                                }
+                            )
+                        }
+                        composable("agent") {
+                            AiAgentScreen(
+                                onNavigateBack = {
                                     navController.popBackStack()
                                 }
                             )

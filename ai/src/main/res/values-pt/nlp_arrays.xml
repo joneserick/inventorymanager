@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gerenciador de Inventário</string>
+    <string name="agent_state">Estado do agente</string>
+    <string name="touch_to_speak">Toque para falar</string>
+
+    <string name="nlp_number_connector_regex">\s+e\s+</string>
+
+    <string-array name="nlp_noise_words">
+        <item>unidades de</item>
+        <item>unidade de</item>
+        <item>caixas de</item>
+        <item>caixa de</item>
+        <item>pacotes de</item>
+        <item>de</item>
+        <item>do</item>
+        <item>da</item>
+    </string-array>
+
+    <string-array name="nlp_action_add">
+        <item>adicionar</item>
+        <item>incluir</item>
+        <item>inserir</item>
+        <item>acrescentar</item>
+        <item>colocar</item>
+        <item>botar</item>
+        <item>somar</item>
+    </string-array>
+
+    <string-array name="nlp_action_remove">
+        <item>remover</item>
+        <item>tirar</item>
+        <item>excluir</item>
+        <item>deletar</item>
+        <item>subtrair</item>
+        <item>diminuir</item>
+        <item>gastar</item>
+        <item>consumir</item>
+    </string-array>
+
+    <string-array name="nlp_action_check">
+        <item>verificar</item>
+        <item>checar</item>
+        <item>quantos</item>
+        <item>quanto</item>
+        <item>qual</item>
+        <item>buscar</item>
+        <item>tem</item>
+    </string-array>
+
+    <string-array name="nlp_numbers">
+        <item>um|1</item>
+        <item>uma|1</item>
+        <item>dois|2</item>
+        <item>duas|2</item>
+        <item>três|3</item>
+        <item>tres|3</item>
+        <item>quatro|4</item>
+        <item>cinco|5</item>
+        <item>dez|10</item>
+        <item>vinte|20</item>
+        <item>trinta|30</item>
+    </string-array>
+</resources>

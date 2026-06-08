@@ -7,7 +7,9 @@ import androidx.camera.core.ImageProxy
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage
 
-class BarcodeAnalyzer(private val onBarcodeDetected: (String) -> Unit) : ImageAnalysis.Analyzer {
+class BarcodeAnalyzer(
+    private val onBarcodeDetected: (String) -> Unit
+) : ImageAnalysis.Analyzer {
     private val scanner = BarcodeScanning.getClient()
 
     @androidx.annotation.OptIn(ExperimentalGetImage::class)
