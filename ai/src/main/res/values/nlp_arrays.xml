@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nlp_number_connector_regex">(?:\s+|-)</string>
+
+    <string-array name="nlp_noise_words">
+        <item>units of</item>
+        <item>unit of</item>
+        <item>boxes of</item>
+        <item>box of</item>
+        <item>packs of</item>
+        <item>of</item>
+        <item>from</item>
+    </string-array>
+
+    <string-array name="nlp_action_add">
+        <item>add</item>
+        <item>include</item>
+        <item>insert</item>
+        <item>put</item>
+        <item>sum</item>
+    </string-array>
+
+    <string-array name="nlp_action_remove">
+        <item>remove</item>
+        <item>delete</item>
+        <item>subtract</item>
+        <item>decrease</item>
+        <item>spend</item>
+        <item>consume</item>
+        <item>take</item>
+    </string-array>
+
+    <string-array name="nlp_action_check">
+        <item>check</item>
+        <item>verify</item>
+        <item>how many</item>
+        <item>how much</item>
+        <item>search</item>
+    </string-array>
+
+    <string-array name="nlp_numbers">
+        <item>one|1</item>
+        <item>two|2</item>
+        <item>three|3</item>
+        <item>four|4</item>
+        <item>five|5</item>
+        <item>ten|10</item>
+        <item>twenty|20</item>
+        <item>thirty|30</item>
+    </string-array>
+</resources>
