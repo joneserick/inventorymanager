@@ -1,14 +1,3 @@
 <resources>
     <string name="app_name">InventoryManager</string>
-    <string name="agent_state">Agent state</string>
-    <string name="touch_to_speak">Touch to speak</string>
-    <string name="i_am_listening">Estou ouvindo...</string>
-    <string name="processing">Processando...</string>
-    <string name="answering">Respondendo...</string>
-    <string name="inventory_assistent">Assistente de Inventário</string>
-    <string name="back">Voltar</string>
-    <string name="scan_barcode">Scan Barcode</string>
-    <string name="inventory">Inventário</string>
-    <string name="ai_assistent">Assistente IA</string>
-    <string name="assistant">Assistente</string>
 </resources>

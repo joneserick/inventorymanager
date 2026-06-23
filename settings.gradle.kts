@@ -27,5 +27,3 @@ rootProject.name = "InventoryManager"
 include(":app")
 include(":core")
 include(":designsystem")
-include(":scanner")
-include(":ai")

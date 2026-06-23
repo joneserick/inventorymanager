@@ -34,12 +34,6 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    testOptions {
-        unitTests {
-            isIncludeAndroidResources = true
-            isReturnDefaultValues = true
-        }
-    }
 }
 
 dependencies {
@@ -49,10 +43,6 @@ dependencies {
     implementation(libs.material)
 
     implementation(libs.hilt.android)
-    implementation(libs.androidx.datastore.core)
-    implementation(libs.androidx.datastore.preferences.core)
-    implementation(libs.androidx.datastore.preferences)
-    implementation(libs.androidx.junit.ktx)
     ksp(libs.hilt.compiler)
 
     implementation(libs.room.runtime)
@@ -61,16 +51,7 @@ dependencies {
     ksp(libs.room.compiler)
 
     implementation(libs.androidx.paging.common)
-
-    implementation(libs.androidx.security.crypto)
-
     testImplementation(libs.junit)
-    testImplementation(libs.org.jetbrains.kotlinx.coroutines.test)
-    testImplementation(libs.org.roboletric)
-    testImplementation(libs.app.cash.turbine)
-    testImplementation(libs.io.mockk)
-    testImplementation("org.bouncycastle:bcprov-jdk15to18:1.84")
-    androidTestImplementation("org.bouncycastle:bcprov-jdk15to18:1.84")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
