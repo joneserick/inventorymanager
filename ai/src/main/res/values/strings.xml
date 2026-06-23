@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="could_not_process_the_command">Não consegui processar o comando. Pode repetir?</string>
+    <string name="error_on_ai_engine">Erro no motor de IA.</string>
+</resources>

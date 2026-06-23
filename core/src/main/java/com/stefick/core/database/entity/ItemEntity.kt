@@ -1,4 +1,4 @@
-package com.stefick.core.database.model
+package com.stefick.core.database.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -9,5 +9,7 @@ data class ItemEntity(
     val name: String,
     val sku: String,
     val quantity: Int,
-    val price: Double
+    val price: Double,
+    val description: String,
+    val barcode: String
 )

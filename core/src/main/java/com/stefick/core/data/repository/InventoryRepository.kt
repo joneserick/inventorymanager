@@ -1,11 +1,11 @@
-package com.stefick.core.data
+package com.stefick.core.data.repository
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.map
 import com.stefick.core.database.dao.InventoryDao
-import com.stefick.core.database.model.ItemEntity
+import com.stefick.core.database.entity.ItemEntity
 import com.stefick.core.model.InventoryItem
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -18,7 +18,15 @@ class InventoryRepository @Inject constructor(
 ) {
     val inventoryItems: Flow<List<InventoryItem>> = dao.getAllItems().map { entities ->
         entities.map { entity ->
-            InventoryItem(entity.id, entity.name, entity.sku, entity.quantity, entity.price)
+            InventoryItem(
+                id = entity.id,
+                name = entity.name,
+                sku = entity.sku,
+                quantity = entity.quantity,
+                price = entity.price,
+                description = entity.description,
+                barcode = entity.barcode
+            )
         }
     }
 
@@ -33,13 +41,25 @@ class InventoryRepository @Inject constructor(
                     name = entity.name,
                     sku = entity.sku,
                     quantity = entity.quantity,
-                    price = entity.price
+                    price = entity.price,
+                    description = entity.description,
+                    barcode = entity.barcode
                 )
             }
         }
     }
 
     suspend fun addItem(item: InventoryItem) {
-        dao.insertItem(ItemEntity(item.id, item.name, item.sku, item.quantity, item.price))
+        dao.insertItem(
+            ItemEntity(
+                id = item.id,
+                name = item.name,
+                sku = item.sku,
+                quantity = item.quantity,
+                price = item.price,
+                description = item.description,
+                barcode = item.barcode
+            )
+        )
     }
 }

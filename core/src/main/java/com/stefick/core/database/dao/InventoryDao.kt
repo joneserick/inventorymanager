@@ -6,7 +6,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.stefick.core.database.model.ItemEntity
+import com.stefick.core.database.entity.ItemEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
