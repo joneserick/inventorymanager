@@ -1,11 +1,11 @@
-package com.stefick.core.data
+package com.stefick.core.data.repository
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.map
 import com.stefick.core.database.dao.InventoryDao
-import com.stefick.core.database.model.ItemEntity
+import com.stefick.core.database.entity.ItemEntity
 import com.stefick.core.model.InventoryItem
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map

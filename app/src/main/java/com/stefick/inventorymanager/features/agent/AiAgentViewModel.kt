@@ -6,7 +6,7 @@ import com.stefick.ai.agent.AiAgentEvent
 import com.stefick.ai.agent.AiAgentUiState
 import com.stefick.ai.llm.AgentResponse
 import com.stefick.ai.llm.LlmInventoryAgent
-import com.stefick.core.data.InventoryRepository
+import com.stefick.core.data.repository.InventoryRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
 import kotlinx.coroutines.Dispatchers

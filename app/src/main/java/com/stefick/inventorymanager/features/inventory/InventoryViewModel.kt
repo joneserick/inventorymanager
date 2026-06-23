@@ -3,7 +3,7 @@ package com.stefick.inventorymanager.features.inventory
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
-import com.stefick.core.data.InventoryRepository
+import com.stefick.core.data.repository.InventoryRepository
 import com.stefick.core.model.InventoryItem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
