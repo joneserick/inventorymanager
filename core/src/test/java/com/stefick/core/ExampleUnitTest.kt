@@ -1,4 +1,4 @@
-package com.stefick.ai
+package com.stefick.core
 
 import org.junit.Test
 
