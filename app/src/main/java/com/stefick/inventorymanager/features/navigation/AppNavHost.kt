@@ -9,6 +9,7 @@ import androidx.navigation.compose.composable
 import com.stefick.inventorymanager.features.agent.AiAgentScreen
 import com.stefick.inventorymanager.features.auth.presentation.login.LoginScreen
 import com.stefick.inventorymanager.features.inventory.InventoryScreen
+import com.stefick.inventorymanager.features.main.MainShellScreen
 import com.stefick.inventorymanager.features.navigation.Routes.AiAgent
 import com.stefick.inventorymanager.features.navigation.Routes.Home
 import com.stefick.inventorymanager.features.navigation.Routes.Inventory
@@ -29,15 +30,15 @@ fun AppNavHost(
         composable<Login> {
             LoginScreen(
                 onNavigateToHome = {
-                    navController.navigate(Home) {
+                    navController.navigate(MainShellRoute) {
                         popUpTo(Login) { inclusive = true }
                     }
                 }
             )
         }
 
-        composable<Home> {
-            // HomeScreen(...)
+        composable<MainShellRoute> {
+            MainShellScreen(rootNavController = navController)
         }
 
         composable<Inventory> {

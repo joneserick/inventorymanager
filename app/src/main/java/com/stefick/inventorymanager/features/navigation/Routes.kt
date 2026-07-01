@@ -2,22 +2,28 @@ package com.stefick.inventorymanager.features.navigation
 
 import kotlinx.serialization.Serializable
 
- @Serializable
+@Serializable
 sealed class Routes {
 
     @Serializable
-    data object Login: Routes()
+    data object Login : Routes()
 
     @Serializable
-    data object Home: Routes()
+    data object Home : Routes()
 
     @Serializable
-    data object Inventory: Routes()
+    data object Inventory : Routes()
 
     @Serializable
-    data object Scanner: Routes()
+    data object Scanner : Routes()
 
     @Serializable
-    data object AiAgent: Routes()
+    data object AiAgent : Routes()
+
+    @Serializable
+    data object Catalog : Routes()
+
+    @Serializable
+    data object Profile : Routes()
 }
 
